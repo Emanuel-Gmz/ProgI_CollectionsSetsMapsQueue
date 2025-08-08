@@ -102,6 +102,7 @@ public class Auto implements Comparable {
 
     @Override
     public int compareTo(Object o) {
+        //Comparar por año y luego kilometraje
         //El entero que devuelve puede ser: -1:menor  0:igual  1:mayor
         Auto auto= (Auto) o;
         int resultado = Integer.compare(this.anio, auto.anio);

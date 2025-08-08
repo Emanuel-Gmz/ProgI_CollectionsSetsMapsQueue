@@ -31,6 +31,11 @@ public class EjSets {
         setAutos.add(auto6);
         setAutos.add(auto7); //no se agrega porque es repetido
 
+        /*No se puede agregar objetos NULL
+        Auto auto8 = null;
+        setAutos.add(auto8); / se agrega null una sola vez
+         */
+
         mostrarSet("-------------- Recorro el set con for-each:", setAutos);
 
         System.out.println("-------------- Recorro el set con Iterator");
@@ -51,9 +56,9 @@ public class EjSets {
         mostrarSet("-------------- Recorro el set con for-each luego de clear", setAutos);
     }
 
-    private static void mostrarSet(String x, Set<Auto> setAutos) {
+    private static void mostrarSet(String msg, Set<Auto> setAutos) {
         //recorro y muestro
-        System.out.println(x);
+        System.out.println(msg);
         for (Auto a : setAutos) {
             System.out.println(a.toString());
         }
